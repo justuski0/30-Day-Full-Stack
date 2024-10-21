@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Justus</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <a href="#" class="logo" id="logo2">Ultra <span>Code</span></a>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Justus Chesaro</h1>
+            <h3>And I'm a <span class="text" aria-label="developer title"></span></h3>
+            <p>Committed to learning and evolving my coding skills. My journey? From "Hello World!" to "Hello, Multiverse!".</p>
+            <button class="btn">Download CV</button>
+        </div>
+        <div class="social-media-icon">
+            <a href="https://www.linkedin.com/in/leonam-silva-de-souza-76bb6424b/" target="_blank" aria-label="LinkedIn profile"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/Leo211990" target="_blank" aria-label="GitHub profile"><i class='bx bxl-github'></i></a>
+        </div>
+        <div class="home-img">
+            <img src="https://media.licdn.com/dms/image/v2/D4D03AQHzFQWbYH7Yhg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724476287413?e=2147483647&v=beta&t=2Z82LiJDSziFKuobArqPMNxJ6kZ_KRg66kh0GkOIz7w" alt="Profile picture of Justus Chesaro">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>
+            I am Justus Chesaro, a passionate Frontend Developer committed to continuous learning and personal growth. With a background in Mathematics and certifications in computer science, I have developed a keen interest in technology and its impact on our lives. My journey began with a fascination for coding, leading me to explore various programming languages and frameworks.
+        </p>
+        <p>
+            I believe in the power of creativity and innovation, and I strive to apply these principles in my work. My goal is to build user-friendly applications that not only solve problems but also enhance the user experience. I am constantly seeking new challenges and opportunities to expand my skill set and contribute to meaningful projects.
+        </p>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React, Vue.js</li>
+            <li>Node.js, Express</li>
+            <li>Python, Django</li>
+            <li>Git, GitHub</li>
+        </ul>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>A brief description of your project goes here. Explain what the project is about and what technologies you used.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>A brief description of your project goes here. Explain what the project is about and what technologies you used.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <p>A brief description of your project goes here. Explain what the project is about and what technologies you used.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>If you would like to get in touch, please feel free to reach out via email or connect with me on LinkedIn.</p>
+        <p>Email: <a href="mailto:chesaro.justus@gmail.com">chesaro.justus@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/leonam-silva-de-souza-76bb6424b/" target="_blank">Connect with me</a></p>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; <span id="year"></span> by Ultra <span>Code</span> | All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Update the year in the footer dynamically
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
